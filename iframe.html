@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <title>BrunysIXLWork | Iframe</title>
+        <link rel="stylesheet" href="/storage/css/main.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link rel="icon" type="image/x-icon" href="/storage/images/favicon.ico">
+    </head>
+    <body>
+        <div id="particles-js"></div>
+
+    <div id="loading-screen">
+        <div class="dots">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+        </div>
+        <p>Loading, please wait...</p>
+    </div>
+
+    <nav class="navbar">
+        <div class="left-nav">
+            <a href="/">
+                <img src="/storage/images/logo.png" alt="Logo" class="logo">
+                <h3>BRUNYSIXLWORK</h3>
+            </a>
+        </div>
+
+        <div class="right-nav">
+            <a href="/games.html"><i class="fa-solid fa-gamepad"></i></a>
+            <a href="/apps.html"><i class="fa-solid fa-table-cells"></i></a>
+            <a href="/extra.html"><i class="fa-solid fa-plus"></i></a>
+            <a href="/settings.html"><i class="fa-solid fa-gear"></i></a>
+        </div>
+    </nav>
+
+    <div style="margin-top: 80px;" class="iframe-container">
+        <iframe id="myIframe" title="Iframe Example"></iframe>
+        <div class="overlay-buttons">
+            <button onclick="toggleFullscreen()"><i class="fas fa-expand"></i></button>
+            <button onclick="refreshIframe()"><i class="fas fa-sync-alt"></i></button>
+            <button onclick="openInNewTab()"><i class="fas fa-external-link-alt"></i></button>
+            <button onclick="activateScript()"><i class="fa-brands fa-discord"></i></button>
+            <button onclick="goToAnotherPage()"><i class="fa-solid fa-trophy"></i></button>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+    <script src="/storage/js/loadingscreen.js"></script>
+    <script src="/storage/js/settings/particles.js"></script>
+    <script src="/storage/js/settings/cloak.js"></script>
+    <script src="/storage/js/settings/data.js"></script>
+    <script src="/storage/js/settings/settings.js"></script>
+    <script src="/storage/js/iframe.js"></script>
+    </body>
+</html>
