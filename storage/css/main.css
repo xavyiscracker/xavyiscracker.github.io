@@ -238,13 +238,12 @@ h1 {
 
 .container {
     display: grid;
-    grid-template-columns: repeat(6, 1fr); 
+    grid-template-columns: repeat(5, 1fr); 
     gap: 20px;
     width: 100%;
-    max-width: 1200px;
+    max-width: 1000px; 
     justify-items: center;
     padding: 10px;
-    margin: 0 auto;
 }
 
 .l-box {
