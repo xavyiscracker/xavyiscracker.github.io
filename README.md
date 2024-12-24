@@ -1,5 +1,5 @@
 # BrunysIXLWork
-A unblocked gaming site for you that self hosts over 140+ games from reliable sources.
+A unblocked gaming site for you that self hosts over 150+ games from reliable sources.
 
 ## BrunysIXLWork Repo Stats
 <img src="https://img.shields.io/github/repo-size/brunysixlwork/BrunysIXLWork.github.io?style=for-the-badge&labelColor=%23000000&color=%231c1c1c">
