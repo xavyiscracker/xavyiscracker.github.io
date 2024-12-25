@@ -238,7 +238,7 @@ h1 {
     opacity: 1; 
 }
 
-.container {
+ .container { 
     display: grid;
     grid-template-columns: repeat(5, 1fr); 
     gap: 20px;
@@ -301,7 +301,7 @@ h1 {
 
 .box {
     font-family: "Nunito", serif;
-    width: 160px;
+    width: 150px;
     text-align: center;
     background: #141414;
     border: none;
