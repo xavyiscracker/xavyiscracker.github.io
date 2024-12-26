@@ -288,16 +288,24 @@ h1 {
     transform: scale(1.05);
 }
 
-.form__input {
-    padding: 20px;
-    font-family: "Nunito", serif;
-    width: 30vw;
-    background-color: #141414;
-    font-size: 16px;
+.search-container {
+    position: relative;
+  }
+
+  .form__input {
+    width: 500px;
+    padding: 20px 20px; 
     border: none;
     border-radius: 50px;
-    color: #fff;
-}
+    background-color: #141414;
+    color: inherit; 
+    font-size: 16px;
+    transition: width 0.3s ease; 
+  }
+
+  .form__input:focus {
+    width: 600px; 
+  }
 
 .box {
     font-family: "Nunito", serif;
@@ -514,6 +522,27 @@ hr {
 .text-box:hover {
     transform: translateY(-10px);
 }
+
+.fade {
+    -webkit-animation: colorFade 5s infinite; 
+            animation: colorFade 5s infinite; 
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards; 
+  }
+  
+  @-webkit-keyframes colorFade {
+    0% { color: green; }
+    33.33% { color: blue; }
+    66.66% { color: yellow; }
+    100% { color: green; }
+  }
+  
+  @keyframes colorFade {
+    0% { color: green; }
+    33.33% { color: blue; }
+    66.66% { color: yellow; }
+    100% { color: green; }
+  }
 
 ::-webkit-scrollbar {
     width: 0px;
