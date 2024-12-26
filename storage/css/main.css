@@ -306,7 +306,7 @@ h1 {
     background: #141414;
     border: none;
     cursor: pointer;
-    border-radius: 15px;
+    border-radius: 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     padding: 10px;
     transition: 0.2s ease;
@@ -317,8 +317,8 @@ h1 {
 }
 
 .box img {
-    width: 160px;
-    height: 160px;
+    width: 150px;
+    height: 150px;
     object-fit: cover;
     border-radius: 5px;
 }
