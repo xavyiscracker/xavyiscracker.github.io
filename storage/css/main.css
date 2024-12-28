@@ -544,6 +544,16 @@ hr {
     100% { color: green; }
   }
 
+  a {
+    color: #0000ff;
+    text-decoration: none;
+    transition: 0.2s ease-in-out;
+}
+
+a:hover {
+    color: #3b3bff;
+}
+
 ::-webkit-scrollbar {
     width: 0px;
 }
