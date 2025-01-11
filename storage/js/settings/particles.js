@@ -1,19 +1,18 @@
-// Function to initialize particles.js with your provided configuration
 function initializeParticles() {
   particlesJS('particles-js', {
       particles: {
           number: {
-              value: 100,  // Number of snowflakes
+              value: 70,  // Number of snowflakes
               density: {
                   enable: true,
                   value_area: 800
               }
           },
           color: {
-              value: '#ffffff' // Snowflake color
+              value: '#ffffff' 
           },
           shape: {
-              type: 'circle',  // Snowflake shape
+              type: 'circle',  
           },
           opacity: {
               value: 0.5,
@@ -37,7 +36,7 @@ function initializeParticles() {
           move: {
               enable: true,
               speed: 1,
-              direction: 'bottom',  // Fall downwards
+              direction: 'bottom',  
               random: true,
               straight: false,
               out_mode: 'out'
@@ -57,28 +56,28 @@ function initializeParticles() {
   });
 }
 
-// Function to disable particles.js by hiding the container
+
 function disableParticles() {
   const particlesContainer = document.getElementById('particles-js');
   if (particlesContainer) {
-      particlesContainer.style.display = 'none'; // Hide particles container
+      particlesContainer.style.display = 'none'; 
   }
-  localStorage.setItem('particlesEnabled', 'false'); // Save state
+  localStorage.setItem('particlesEnabled', 'false');
   toggleButtons('hide');
 }
 
-// Function to enable particles.js by showing the container
+
 function enableParticles() {
   const particlesContainer = document.getElementById('particles-js');
   if (particlesContainer) {
-      particlesContainer.style.display = 'block'; // Show particles container
+      particlesContainer.style.display = 'block'; 
   }
-  localStorage.setItem('particlesEnabled', 'true'); // Save state
+  localStorage.setItem('particlesEnabled', 'true'); 
   initializeParticles();
   toggleButtons('show');
 }
 
-// Toggle button visibility based on state
+
 function toggleButtons(action) {
   const disableButton = document.getElementById('disable-particles');
   const enableButton = document.getElementById('enable-particles');
@@ -92,18 +91,18 @@ function toggleButtons(action) {
   }
 }
 
-// Check if particles are enabled on page load
+
 window.addEventListener('load', function() {
   const particlesEnabled = localStorage.getItem('particlesEnabled');
   if (particlesEnabled !== 'false') {
-      initializeParticles(); // Initialize if enabled
+      initializeParticles(); 
       toggleButtons('show');
   } else {
-      document.getElementById('particles-js').style.display = 'none'; // Hide by default if disabled
+      document.getElementById('particles-js').style.display = 'none'; 
       toggleButtons('hide');
   }
 });
 
-// Add event listeners for the toggle buttons
+
 document.getElementById('disable-particles').addEventListener('click', disableParticles);
 document.getElementById('enable-particles').addEventListener('click', enableParticles);
